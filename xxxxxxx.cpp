@@ -1,13 +1,13 @@
-﻿#include <iostream>
+#include <iostream>
 int main()
 {
 
 	int max = -100000;
 	int sum = 0;
-	int ii = 1;
+
 	int n;
 	std::cin >> n;
-
+	int ii = 0;
 	for (int i = 0; i < n; i++)
 	{
 		int x;
@@ -20,12 +20,12 @@ int main()
 		}
 		if (x > max)
 		{
-			
+
 			max = x;
 			ii = i;
 		}
 	}
 	std::cout << sum << std::endl;
 	std::cout << max << std::endl;
-	std::cout << ii << std::endl;
+	std::cout << ii + 1 << std::endl; // номер на 1 больше индекса
 }
